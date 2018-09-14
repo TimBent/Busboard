@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import { busboard } from '../app/genric-stop-detail';
 
 @Component({
   selector: 'app-root',
