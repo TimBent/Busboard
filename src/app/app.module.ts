@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { GenricStopDetailComponent } from './genric-stop-detail/genric-stop-detail.component';
 import { BusStopsComponent } from './bus-stops/bus-stops.component';
+import { AppRoutingModule } from './/app-routing.module';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,7 +15,8 @@ import { BusStopsComponent } from './bus-stops/bus-stops.component';
     BusStopsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
