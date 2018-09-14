@@ -1,5 +1,4 @@
-<h1>{{ bus }}</h1>
-<h1>Arrivals at {{ Stop.getname() }} </h1>
+<h1>Arrivals at {{ stop.getname() }} </h1>
 <ol>
-    <li *ngFor="let bus of Buses">{{ bus.getnumber() }} towards {{ bus.getdestination() }} in 3 minutes. </li>
+    <li *ngFor="let arr of stop.arrivals">{{ arr.bus.getnumber() }} towards {{ arr.bus.getdestination() }} in 3 minutes. </li>
 </ol>

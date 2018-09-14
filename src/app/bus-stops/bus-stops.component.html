@@ -1,3 +1,6 @@
-<p>
-  bus-stops works!
-</p>
+<h1>List of Bus Stops</h1>
+<ol>
+  <li *ngFor = "let stops of Stops" (click)="onClickStopName(stops)"> {{ stops.getname() }}</li>
+</ol>
+<h1 *ngIf="stopss !== undefined"> You selected {{ stopss.getname() }} </h1>
+<app-genric-stop-detail *ngIf="stopss !== undefined" [stop]="stopss"></app-genric-stop-detail>

@@ -1,6 +1,8 @@
+import { Arrival } from '../app/arrival'
+
 export class Stop {
     
-    constructor ( protected name: string, protected id: number, protected direction: string) {}
+    constructor ( protected name: string, protected id: number, protected direction: string, protected arrivals: Arrival[]) {}
 
     getname(): String {
         return this.name;
@@ -13,5 +15,4 @@ export class Stop {
     getdirection(): number {
         return this.id;
     }
-    //location: Tuple(number, number);
 }

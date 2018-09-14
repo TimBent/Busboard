@@ -1,6 +1,6 @@
 export class Bus {
 
-    constructor( protected number: number, protected destination: string, protected route: string, protected Stop: 6 yt[]){}
+    constructor( protected number: number, protected destination: string, protected route: string){}
 
     getnumber(): number {
         return this.number;
